@@ -1,0 +1,44 @@
+# kubectl-pilot configuration file
+# Place this file at ~/.k8s-pilot.yaml
+
+ai:
+  # AI provider: openai, anthropic, ollama, or mock
+  provider: ollama
+  
+  # API key for the provider (not needed for mock or ollama)
+  api_key: ""
+  
+  # Model to use
+  model: ""
+  
+  # Base URL (for ollama or custom endpoints)
+  base_url: "http://localhost:11434"
+  
+  # Generation parameters
+  temperature: 0.7
+  max_tokens: 2000
+
+kubernetes:
+  # Kubernetes context to use (leave empty for current context)
+  context: ""
+  
+  # Default namespace
+  namespace: "default"
+
+policy:
+  # Enable policy validation
+  enabled: false
+  
+  # OPA server address (if using external OPA)
+  opa_address: "http://localhost:8181"
+
+logging:
+  # Log level: debug, info, warn, error
+  level: "info"
+  
+  # Log format: text or json
+  format: "text"
+
+# List of plugins to load
+plugins: []
+

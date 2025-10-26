@@ -1,0 +1,60 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: pilot
+spec:
+  version: v0.1.0
+  homepage: https://github.com/yourusername/k8s-pilot
+  shortDescription: AI-powered Kubernetes operations assistant
+  description: |
+    kubectl-pilot translates natural language into safe, auditable
+    Kubernetes actions, diagnoses cluster issues, and provides
+    explainable fixes.
+    
+    Features:
+    - Natural language to kubectl commands
+    - Cluster diagnostics with AI-powered insights
+    - Dry-run by default with safety guardrails
+    - Multi-cloud support (GKE, EKS, AKS, K3s, Kind)
+    - Extensible plugin system
+  
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/yourusername/k8s-pilot/releases/download/v0.1.0/kubectl-pilot_Linux_x86_64.tar.gz
+    sha256: "REPLACE_WITH_ACTUAL_SHA256"
+    bin: kubectl-pilot
+  
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+    uri: https://github.com/yourusername/k8s-pilot/releases/download/v0.1.0/kubectl-pilot_Linux_arm64.tar.gz
+    sha256: "REPLACE_WITH_ACTUAL_SHA256"
+    bin: kubectl-pilot
+  
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/yourusername/k8s-pilot/releases/download/v0.1.0/kubectl-pilot_Darwin_x86_64.tar.gz
+    sha256: "REPLACE_WITH_ACTUAL_SHA256"
+    bin: kubectl-pilot
+  
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: arm64
+    uri: https://github.com/yourusername/k8s-pilot/releases/download/v0.1.0/kubectl-pilot_Darwin_arm64.tar.gz
+    sha256: "REPLACE_WITH_ACTUAL_SHA256"
+    bin: kubectl-pilot
+  
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/yourusername/k8s-pilot/releases/download/v0.1.0/kubectl-pilot_Windows_x86_64.zip
+    sha256: "REPLACE_WITH_ACTUAL_SHA256"
+    bin: kubectl-pilot.exe
