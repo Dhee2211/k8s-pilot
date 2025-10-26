@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > AI-powered Kubernetes operations assistant that translates natural language into safe, auditable Kubernetes actions, diagnoses cluster issues, and provides explainable fixes.
+> >>>>>>>>>>>>> This repo is under development <<<<<<<<<
 
 ## 🎯 Features
 
