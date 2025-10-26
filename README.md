@@ -21,7 +21,7 @@
 ### Homebrew
 
 ```bash
-brew install yourusername/tap/kubectl-pilot
+brew install kubectl-pilot
 ```
 
 ### Krew
@@ -33,13 +33,13 @@ kubectl krew install pilot
 ### From Source
 
 ```bash
-go install github.com/yourusername/k8s-pilot@latest
+go install github.com/dhee2211/k8s-pilot@latest
 ```
 
 ### Docker
 
 ```bash
-docker pull yourusername/kubectl-pilot:latest
+docker pull dhee2211/kubectl-pilot:latest
 ```
 
 ## 🚀 Quick Start
